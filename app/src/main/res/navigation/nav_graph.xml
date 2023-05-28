@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/venueListFragment">
+
+
+    <fragment
+        android:id="@+id/venueListFragment"
+        android:name="com.krutika.bookmyshow.ui.venue.VenusListFragment"
+        android:label="venueListFragment"
+        tools:layout="@layout/fragment_venus_list">
+
+        <action
+            android:id="@+id/action_From_venueList_to_showtimeList"
+            app:destination="@id/showTimeListFragment"
+            app:popUpToInclusive="true"
+            app:popUpToSaveState="true">
+
+            <argument
+                android:name="showtime"
+                app:argType="com.krutika.bookmyshow.data.remote.models.VenuesItem" />
+        </action>
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/showTimeListFragment"
+        android:name="com.krutika.bookmyshow.ui.showlist.ShowListFragment"
+        android:label="showTimeListFragment"
+        tools:layout="@layout/fragment_venus_list" />
+
+</navigation>

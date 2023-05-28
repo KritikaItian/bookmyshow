@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BookmyShow</string>
+
+
+    <!--error handling strings-->
+    <string name="error_network">A network error has occurred. Please try again.</string>
+    <string name="error_no_internet_connection">Please check your internet connection. Please try again.</string>
+    <string name="error_server">A server error has occurred. Please try again.</string>
+    <string name="error_unknown">An unknown error has occurred. Please try again.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="book_my_show">Book My Show</string>
+    <string name="show_times">Show Times</string>
+
+</resources>
